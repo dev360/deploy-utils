@@ -1,4 +1,5 @@
 *.py[co]
+*._*
 
 # Packages
 *.egg
@@ -22,6 +23,12 @@ pip-log.txt
 
 #Translations
 *.mo
+*.db
+
+*.swp
+*.swo
+
+.DS_Store
 
 #Mr Developer
 .mr.developer.cfg
