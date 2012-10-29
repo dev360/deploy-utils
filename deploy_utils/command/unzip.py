@@ -48,7 +48,7 @@ def main():
         # Create the directory if needed.
         run('mkdir -p {0}'.format(destination))
         put(file_path, destination)
-        run('cd {0} && tar -xzf {1}'.format(destination, destination_file_name))
+        run('cd {0} && tar -xmzf {1}'.format(destination, destination_file_name))
         run('rm {0}'.format(destination_file_name))
 
 
