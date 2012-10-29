@@ -84,7 +84,8 @@ def main():
             to_path = target_path + '/' + include
 
             dir_path = '/'.join(include.split('/')[:-1])
-            os.makedirs(dir_path)
+            if dir_path:
+                os.makedirs(dir_path)
 
             if os.path.isfile(from_path):
                 cmd = 'cp -R {0} {1}'.format(from_path, to_path)
